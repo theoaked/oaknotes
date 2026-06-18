@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OakNotes</title>
+  <meta name="description" content="Navegador de notas em Markdown do repositório oaknotes." />
+
+  <!-- Realce de sintaxe -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github.min.css" id="hljs-light" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css" id="hljs-dark" disabled />
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="sidebar-toggle" class="icon-btn" title="Mostrar/ocultar navegação" aria-label="Alternar navegação">☰</button>
+    <a class="brand" href="#/" title="Início">
+      <span class="brand-mark">🌳</span><span class="brand-name">OakNotes</span>
+    </a>
+    <div class="search">
+      <input id="search-input" type="search" placeholder="Buscar por nome…" autocomplete="off" spellcheck="false" />
+      <button id="content-search-btn" class="ghost-btn" title="Buscar também dentro do conteúdo dos arquivos">no conteúdo</button>
+    </div>
+    <div class="spacer"></div>
+    <a id="repo-link" class="icon-btn" href="#" target="_blank" rel="noopener" title="Abrir repositório no GitHub">⧉</a>
+    <button id="theme-toggle" class="icon-btn" title="Alternar tema claro/escuro" aria-label="Alternar tema">◐</button>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div id="tree" class="tree" aria-label="Arquivos"></div>
+    </aside>
+    <main id="content" class="content">
+      <div id="view" class="view"></div>
+    </main>
+    <nav id="toc" class="toc" aria-label="Sumário"></nav>
+  </div>
+
+  <div id="overlay" class="overlay" hidden></div>
+
+  <!-- Bibliotecas (carregadas antes do app) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
