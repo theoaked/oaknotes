@@ -1,5 +1,7 @@
 # OakNotes
 
+https://theoaked.github.io/oaknotes/#/notes/bem-vindo.md
+
 Página estática (GitHub Pages) que lista, navega, exibe e permite baixar todos
 os arquivos `.md` guardados na pasta [`notes/`](notes/) deste repositório.
 
